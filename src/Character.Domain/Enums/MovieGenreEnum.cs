@@ -1,6 +1,6 @@
 ﻿namespace Character.Domain.Enums;
 
-public enum SerieGenre
+public enum MovieGenreEnum
 {
     Action,
     Adventure,
@@ -13,11 +13,9 @@ public enum SerieGenre
     SciFi,
     Thriller,
     Documentary,
+    Animation,
+    Musical,
     Crime,
     Historical,
-    Political,
-    Supernatural,
-    Family,
-    Reality,
-    Anthology
+    Western
 }

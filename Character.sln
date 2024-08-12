@@ -5,9 +5,29 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{982A3DD1-9DFF-4D2C-B3B8-45EB9DF94334}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Character.API", "src\Character.API\Character.API.csproj", "{378D12DA-5949-48AE-9E7D-086CF2B72530}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Character.API", "src\Character.API\Character.API.csproj", "{378D12DA-5949-48AE-9E7D-086CF2B72530}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Character.Domain", "src\Character.Domain\Character.Domain.csproj", "{20B21795-4810-4424-9FBF-8627DE53DB19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Character.Domain", "src\Character.Domain\Character.Domain.csproj", "{20B21795-4810-4424-9FBF-8627DE53DB19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{D5CD3467-9049-4C27-8886-5014D7358C5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "store", "store", "{A6FF02D6-4881-4ECE-9242-BE39E580DC4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pgstore", "pgstore", "{98E11130-1D43-4C52-86E1-F0EA59B5B6ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "migrations", "migrations", "{CC4EBB7D-0E5A-40A6-AD56-D4DC20B5367D}"
+	ProjectSection(SolutionItems) = preProject
+		initial_schema.sql = initial_schema.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{527CE0DB-720D-4689-82E7-9A8A5AA23EE1}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{B8A15829-5925-42E9-8F90-2DB423396FF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlRunner", "tools\SqlRunner\SqlRunner.csproj", "{52E76C89-EE5D-46E0-A973-96529BA406BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +43,10 @@ Global
 		{20B21795-4810-4424-9FBF-8627DE53DB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20B21795-4810-4424-9FBF-8627DE53DB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20B21795-4810-4424-9FBF-8627DE53DB19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E76C89-EE5D-46E0-A973-96529BA406BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E76C89-EE5D-46E0-A973-96529BA406BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E76C89-EE5D-46E0-A973-96529BA406BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E76C89-EE5D-46E0-A973-96529BA406BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +54,10 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{378D12DA-5949-48AE-9E7D-086CF2B72530} = {982A3DD1-9DFF-4D2C-B3B8-45EB9DF94334}
 		{20B21795-4810-4424-9FBF-8627DE53DB19} = {982A3DD1-9DFF-4D2C-B3B8-45EB9DF94334}
+		{A6FF02D6-4881-4ECE-9242-BE39E580DC4D} = {D5CD3467-9049-4C27-8886-5014D7358C5A}
+		{98E11130-1D43-4C52-86E1-F0EA59B5B6ED} = {A6FF02D6-4881-4ECE-9242-BE39E580DC4D}
+		{CC4EBB7D-0E5A-40A6-AD56-D4DC20B5367D} = {98E11130-1D43-4C52-86E1-F0EA59B5B6ED}
+		{52E76C89-EE5D-46E0-A973-96529BA406BF} = {B8A15829-5925-42E9-8F90-2DB423396FF0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {140F6D1D-8FED-4DBB-9B50-E20656B4EDB7}

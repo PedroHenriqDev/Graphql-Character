@@ -1,6 +1,6 @@
 ﻿namespace Character.Domain.Enums
 {
-    public enum GameGenre
+    public enum GameGenreEnum
     {
         Action,
         Adventure,

@@ -1,5 +1,4 @@
 ﻿using Character.Domain.Enums;
-using Character.Domain.Interface;
 
 namespace Character.Domain.Entities;
 
@@ -12,9 +11,9 @@ public class Character
     public double Weight { get; set; }
     public CharacterType Type { get; set; }
     public required ICollection<Feature>? Features { get; set; } = [];
-    public required ICollection<Movie> Movies { get; set; } = [];
-    public required ICollection<Serie> Series { get; set; } = [];
-    public required ICollection<Game> Games { get; set; } = [];
-    public required ICollection<Book> Books { get; set; } = [];
+    public ICollection<Content<MovieGenreEnum>>? Movies { get; set; }
+    public ICollection<Content<SerieGenreEnum>>? Series { get; set; }
+    public ICollection<Content<GameGenreEnum>>? Games { get; set; }
+    public ICollection<Content<BookGenreEnum>>? Books { get; set; }
 
 }
