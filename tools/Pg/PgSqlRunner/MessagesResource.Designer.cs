@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SqlRunner {
+namespace PgSqlRunner {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace SqlRunner {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SqlRunner.MessagesResource", typeof(MessagesResource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PgSqlRunner.MessagesResource", typeof(MessagesResource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace SqlRunner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to An error ocurred.
+        ///   Looks up a localized string similar to Error: {0}  | Rows Affected: {1}.
         /// </summary>
         public static string ErrorMessage {
             get {
@@ -70,11 +70,20 @@ namespace SqlRunner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This path does not exist {scriptFilePath}.
+        ///   Looks up a localized string similar to This path does not exist: {0}.
         /// </summary>
         public static string FileNotFoundMessage {
             get {
                 return ResourceManager.GetString("FileNotFoundMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Script executed successfully | Rows Affected: {0}.
+        /// </summary>
+        public static string SuccessfullyMessage {
+            get {
+                return ResourceManager.GetString("SuccessfullyMessage", resourceCulture);
             }
         }
         

@@ -118,10 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ErrorMessage" xml:space="preserve">
-    <value>An error ocurred</value>
+    <value>Error: {0}  | Rows Affected: {1}</value>
   </data>
   <data name="FileNotFoundMessage" xml:space="preserve">
-    <value>This path does not exist {scriptFilePath}</value>
+    <value>This path does not exist: {0}</value>
+  </data>
+  <data name="SuccessfullyMessage" xml:space="preserve">
+    <value>Script executed successfully | Rows Affected: {0}</value>
   </data>
   <data name="UsageMessage" xml:space="preserve">
     <value>Usage: &lt;progam&gt; &lt;connectionString&gt; &lt;scriptFilePath&gt;</value>
