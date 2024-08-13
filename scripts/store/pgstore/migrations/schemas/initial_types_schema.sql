@@ -1,4 +1,4 @@
-CREATE TYPE character_type AS ENUM (
+CREATE TYPE personage_type AS ENUM (
      'Hero',
      'Villain',
      'AntiHero',

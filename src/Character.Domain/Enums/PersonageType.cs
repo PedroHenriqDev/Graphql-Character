@@ -1,6 +1,6 @@
 ﻿namespace Character.Domain.Enums;
 
-public enum CharacterType
+public enum PersonageType
 {
     Hero,
     Villain,

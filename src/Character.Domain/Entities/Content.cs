@@ -1,14 +1,10 @@
-﻿using Character.Domain.Interface;
+﻿using Character.Domain.Entities.Abstract;
+using Character.Domain.Interface;
 
 namespace Character.Domain.Entities;
 
-public class Content<TGenreEnum>
+public class Content<TGenreEnum> : ContentBase
     where TGenreEnum : Enum 
 {
-    public Guid Id { get; set; }
-    public Guid CharacterId { get; set; }
-    public string Name { get; set; } = string.Empty;
-    public string Description { get; set; } = string.Empty;
     public required ICollection<IContentGenre<TGenreEnum>> ContentGenres { get; set; } = [];
-    public DateTime DatePublication { get; set; }
 }
